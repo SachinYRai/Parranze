@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/chat/chat.css",
+    "inputFile": "wwwroot/css/chat/chat.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/home/_home.css",
+    "inputFile": "wwwroot/css/home/_home.scss"
+  }
+]

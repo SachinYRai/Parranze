@@ -1,0 +1,10 @@
+Parrazene/bin/Debug/
+Parrazene/bin/Release/
+Parrazene/obj/Debug/
+Parrazene/obj/Release/
+Chat/obj/Debug/
+Chat/obj/Release/
+Parranze.Data/obj/Debug/
+Parranze.Data/obj/Release/
+Parrazene/appsettings.json
+Parrazene/appsettings.Development.json

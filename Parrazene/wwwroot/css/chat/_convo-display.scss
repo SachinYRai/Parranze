@@ -1,0 +1,25 @@
+﻿#message-area{
+    padding-top:27px;
+}
+
+%chat-box-lg {
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+
+#message-display, #conversations-box {
+    @extend %chat-box-lg;
+}
+
+#message-display {
+    height: 60vh;
+}
+
+#conversations-box {
+    min-height: 900px;
+}
+
+
+.tokenize {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+﻿@model Conversation;
+
+
+    <div class="convo">
+        <a class="btn-info">
+            <input hidden value="@Model.Id" class="convo-id" />
+            <div class="convo-name">@(Model.Name ?? "TODO - Add users name")</div>
+            <div>
+                <span class="convo-user">@(Model.LatestMessage?.User): </span>
+                <span class="convo-message">@Model.LatestMessage?.Message</span>
+            </div>
+            <div class="convo-date">@Model.LatestMessage?.DateCreated</div>
+        </a>
+    </div>

@@ -1,0 +1,45 @@
+﻿#message-area {
+  padding-top: 27px; }
+
+#message-display, #conversations-box {
+  width: 100%;
+  border: 1px solid #ced4da; }
+
+#message-display {
+  height: 60vh; }
+
+#conversations-box {
+  min-height: 900px; }
+
+.tokenize {
+  width: 100%; }
+
+#convo-header {
+  padding: inherit; }
+
+#convo-container {
+  padding: inherit; }
+  #convo-container .convo {
+    font-size: 0.7rem;
+    width: 100%; }
+    #convo-container .convo a {
+      border: solid darkgray 0.5px;
+      display: block;
+      color: white;
+      padding: 0.1rem 0.5rem;
+      border-radius: 2px; }
+      #convo-container .convo a:hover {
+        cursor: pointer; }
+    #convo-container .convo p {
+      margin-bottom: 0; }
+    #convo-container .convo .convo-name {
+      font-weight: 700;
+      font-size: 0.9rem; }
+    #convo-container .convo .convo-user {
+      font-weight: 500;
+      font-style: italic; }
+    #convo-container .convo .convo-message {
+      text-overflow: ellipsis; }
+    #convo-container .convo .convo-date {
+      font-size: 0.5rem;
+      text-align: right; }

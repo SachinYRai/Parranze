@@ -1,0 +1,53 @@
+﻿@model ChatViewModel;
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="row" id="convo-header">
+                <h6>Conversations</h6>
+            </div>
+            <div class="row" id="convo-container">
+                @foreach(var convo in Model.Conversations)
+                {
+                    @await Html.PartialAsync("_Conversations", convo);
+                }
+            </div>
+        </div>
+
+        <div class="col-9" id="message-area">
+            <div class="row">
+                <select class="auto-multi-select col" multiple> </select>
+                <input type="hidden" id="group-id">
+                <input type="hidden" id="group-bool">
+            </div>
+            <div class="row">
+                <div id="message-display"></div>
+            </div>
+      
+            <div class="row mt-3">
+                <div class="col-12 col-md-9">
+                    <input type="text" id="messageInput" style="width:100%" />
+                </div>
+                <div class="col-12 col-md-3">
+                    <input type="button" id="sendButton" value="Send Message" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+
+</div>
+
+
+@section scripts{
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+    <script src="~/js/enable-tokenize2-multiselect.js"></script>
+}
